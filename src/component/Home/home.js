@@ -54,8 +54,8 @@ const Home = () => {
       </section>
       <section className="lngpg_section-2">
         <div className="lngpg_section-cardwraper">
-          <div className="lngpg_section-2-cards faded_card">
-            <h5>Additional eBike Kit</h5>
+          <div className="lngpg_section-2-cards ">
+            <h5>Universal eBike Kit</h5>
             <img src={bigbikeimg} alt="" className="img-fluid" />
             <div className="lngpg_section-2card-footer">
               <div>
@@ -80,10 +80,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="lngpg_section-2-cards">
+          <div className="lngpg_section-2-cards faded_card">
             <h5>Universal eBike Kit</h5>
             <img src={bigbikeimg} alt="" className="img-fluid" />
-            <div className="lngpg_section-2card-footer">
+            <div className="lngpg_section-2card-footer faded_card">
               <div>
                 <p className="card_priceheader">Price</p>
                 <p className="card_price">$750.00</p>

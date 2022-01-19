@@ -90,7 +90,7 @@
 }
 .lngpg_section-cardwraper {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: flex-end;
   padding: 0px 0px 34px;
 }
 .lngpg_section-2-cards {
@@ -100,7 +100,7 @@
   width: 27%;
   background-color: #fff;
 }
-.lngpg_section-2-cards:not(:first-child) {
+.lngpg_section-2-cards:not(:last-child) {
   margin-right: 35px;
 }
 .faded_card {
@@ -354,8 +354,10 @@
   .lngpg_section-1 {
     padding: 161px 0px 80px 0px;
   }
+  
   .lngpg_section-cardwraper {
     overflow-x: scroll;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     overflow-y: hidden;
   }
@@ -366,7 +368,7 @@
     flex: 0 0 auto;
     width: 85%;
   }
-  .lngpg_section-2-cards:not(:first-child) {
+  .lngpg_section-2-cards:not(:last-child) {
     margin-right: 22px;
   }
   .lngpg_section-2 {
