@@ -1,0 +1,88 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 43px 0px;
+    align-items: flex-end;
+}
+.logo{
+    color:#fff;
+    display: flex;
+}
+
+.navlinks {
+    text-decoration: none;
+    color: rgba(125, 121, 135, .5);
+}
+
+.navlinks::after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #fff;  
+    transform: scaleX(0);  
+    transition: transform 300ms ease-in-out;
+}
+.navlinks:hover::after { 
+    transform: scaleX(1);
+
+}
+.button{
+    display: inline-block;
+    border-radius: 7px;
+    padding: 5px 26px;
+    background-color: #fff;
+    color: #0675c1;
+    transition: all 0.5s ease;
+}
+.button:hover{
+    color:#fff;
+    background-color: #0675c1;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1024px){
+    .navlist{
+        width: 60%;
+    }
+    .proj-assignment{
+        width: 97%;
+    }
+    .special-skills{
+        width: 77%;
+    }
+}  
+@media screen and (max-width:760px){
+    body{
+      overflow-x: hidden;
+  
+  }
+  
+ nav{
+  display: flex;
+  position: fixed; 
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 9vh;
+  z-index: 12;
+  width: 100%;
+  padding: 26px 15px;
+ }
+ .gflCrB{
+     top: 12vh;
+ }
+ .bfDxHI{
+     top: 12vh;
+ }
+ .distance{
+  display: block;
+ }
+ .button:hover{
+    color:#0675c1;
+    background-color: #fff;
+ }
+}
+
